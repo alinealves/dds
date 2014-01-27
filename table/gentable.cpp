@@ -13,7 +13,7 @@ int main (int argc, char** argv) {
 
   int64_t max = int64_t((1 << atoi(argv[1])));
   for (int64_t i=0;i<max;i++) {
-    int64_t val = int64_t(sin(double(i)/double(max)*2*M_PI)*(1 << atoi(argv[2])));
+    int64_t val = int64_t(sin(double(i)/double(max)*2*M_PI)*(1 << atoi(argv[2])-1));
     cout << "assign " << argv[3] << " [" << i << "] = " << val << ";" << endl;
   }
 
